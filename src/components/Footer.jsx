@@ -1,8 +1,8 @@
-
 import { Link } from 'react-router-dom'
 import { FaFacebook,FaTwitter,FaInstagram,FaLinkedin} from "react-icons/fa";
 
 const Footer = () => {
+
   return (
     <footer className='bg-gray-800 text-white py-8 px-4 md:px-16 lg:px-24'>
       <div className='container mx-auto flex flex-col gap-8' >
@@ -48,12 +48,9 @@ const Footer = () => {
           <a href="">Privacy Policy</a>
           <a href="">Terms of Service</a>
         </div>
-        
+        </div>
       </div>
-      
-    </div>
     </footer>
   )
 }
-
 export default Footer

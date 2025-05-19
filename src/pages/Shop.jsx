@@ -1,7 +1,9 @@
 import ProductCard from '../components/ProductCard'
 import useProduct from '../customHook/useProduct'
+
 const Shop = () => { 
   const products=useProduct();
+  
   return (
       <div className='mx-auto py-12 px-4 md:px-16 lg:px-24'>
         <h2 className='text-2xl font-bold mb-6 text-center'>Shop</h2>

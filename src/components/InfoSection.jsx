@@ -4,8 +4,6 @@ import { BiSupport } from "react-icons/bi";
 import { GrSecure } from "react-icons/gr";
 import {MdDiscount} from "react-icons/md";
 
-
-
 const InfoSection = () => {
     const infoItems=[{
         icon:<FaShippingFast/>,
@@ -33,11 +31,11 @@ const InfoSection = () => {
         description:'Enjoy the best prices on our products'
     },
 ]
+
   return (
     <div className='bg-white pt-12 pb-8'>
       <div className='container mx-auto flex gap-4'>
-       
-      {infoItems.map((ele,index)=>{
+       {infoItems.map((ele,index)=>{
         return( 
             <div key={index} className='border flex flex-col text-center items-center p-4 rounded-lg shadow-md
             transform transition-transform duration-300 hover:scale-105 cursor-pointer basis-1/5
@@ -52,7 +50,4 @@ const InfoSection = () => {
     </div>
   )
 }
-
-export default InfoSection
-//px-4 md:px-16 lg:px-24
-//grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4
+export default InfoSection;

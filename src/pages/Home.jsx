@@ -4,13 +4,14 @@ import CategoriesSection from '../components/CategoriesSection'
 import ProductCard from '../components/ProductCard'
 import Shop from './Shop'
 import useProduct from '../customHook/useProduct'
+
 const Home = () => {
   const products=useProduct();
+
   return (
     <div className='bg-white mt-2 px-4 md:px-16 lg:px-24'>
       <div className='container mx-auto py-4 flex flex-col md:flex-row space-x-14'>
-
-      <div className='w-full md:w-3/12'>
+<div className='w-full md:w-3/12'>
 <div className='bg-red-600 text-white text-xs font-bold px-2 py-2.5'>SHOP BY CATEGORIES</div>
 <ul className='space-y-4 bg-gray-100 p-3'>
   {categories.map((ele,index)=>{

@@ -28,13 +28,12 @@ getItemIndex.price=getItemIndex.price + newItemToCart.price
             }
             state.totalQuantity++;
             state.totalPrice=state.totalPrice+newItemToCart.price
-
-        },
+},
         removeFromCart:(state,action)=>{
             const id=action.payload
             const getItem=state.cart.find((ele)=>ele.id===id)
             if(getItem){
-          state.totalPrice=state.totalPrice-getItem.totalPrice
+          state.totalPrice=state.totalPrice-getItem.price
           state.totalQuantity=state.totalQuantity-getItem.quantity
             }
         state.cart=state.cart.filter((ele)=>ele.id!=id)

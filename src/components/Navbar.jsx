@@ -5,7 +5,8 @@ import {Link} from 'react-router-dom'
 
 const Navbar = () => {
     const cartProduct=useSelector((state) => state.cart.cart);
-    console.log(cartProduct)
+    console.log(cartProduct);
+
   return (
     <nav className='bg=white shadow-md'>
         <div className='container flex mx-auto py-4 justify-between items-center px-4 md:px-16 lg:px-24'>
@@ -20,17 +21,14 @@ const Navbar = () => {
                 <Link to='/cart'><FaShoppingCart className='text-lg relative'/>
                 <span className='absolute bg-red-600 rounded-full top-0.5 px-1'>{cartProduct.length > 0 ? cartProduct.length : 0}</span>
                 </Link>
-
-    <button className='hidden md:block'>Login | Register</button>
+<button className='hidden md:block'>Login | Register</button>
     <button className='hidden xs:block'>
         <FaUser/>
     </button>
-    
-            </div>
+    </div>
         </div>
       <div className='py-4 flex justify-center items-center space-x-10 text-sm font-bold'>
-       
-            <Link to='/'>Home</Link>
+       <Link to='/'>Home</Link>
             <Link   to='/shop'>Shop</Link>
             <Link to='/contact'>Contact</Link>
             <Link to='/about'>About</Link>
@@ -38,6 +36,4 @@ const Navbar = () => {
     </nav>
   )
 }
-
-export default Navbar
-//flex w-5xl border border-b-gray-600 p-2 pl-4
+export default Navbar;
